@@ -4,11 +4,12 @@
 <configuration>
 
     <typeAliases>
-        <typeAlias alias="Person" type="com.model.Person" />
+        <typeAlias alias="Person" type="com.model.Person"/>
+        <typeAlias alias="StringDto" type="com.model.StringDto"/>
     </typeAliases>
 
     <mappers>
-        <mapper resource="Person.xml" />
+        <mapper resource="Person.xml"/>
     </mappers>
 
 </configuration>

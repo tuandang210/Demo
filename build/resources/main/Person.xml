@@ -18,9 +18,9 @@
         SELECT * FROM PERSON
     </select>
 
-<!--    <select id="selectPersonById" parameterType="int" resultType="Person">-->
-<!--        SELECT * FROM PERSON WHERE ID = #{id};-->
-<!--    </select>-->
+    <select id="findPersonByName" parameterType="StringDto" resultMap="result">
+        select * from PERSON where NAME like #{name} and IDENTITYCARD like #{identityCard}
+    </select>
 
     <resultMap id = "result" type = "Person">
         <result property = "id" column = "ID"/>

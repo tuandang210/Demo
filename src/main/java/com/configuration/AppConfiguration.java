@@ -104,7 +104,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
         return mapperScannerConfigurer;
     }
 
-    @Bean (name = "personMapper")
+    @Bean(name = "personMapper")
     public PersonMapper personMapper() throws Exception {
         SqlSessionTemplate sessionTemplate = new SqlSessionTemplate(Objects.requireNonNull(sqlSessionFactory().getObject()));
         return sessionTemplate.getMapper(PersonMapper.class);
