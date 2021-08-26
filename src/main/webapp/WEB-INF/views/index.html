@@ -72,8 +72,11 @@
                 });
             }
         });
+        $('.remove').click(function (e) {
+            e.preventDefault();
+            $('.jtable-row-selected').removeClass('jtable-row-selected');
+        });
 
-        // $('#PersonTableContainer').jtable('load');
         //Re-load records when user click 'load records' button.
         $('#LoadRecordsButton').click(function (e) {
             e.preventDefault();
@@ -85,7 +88,6 @@
 
         //Load all records when page is first shown
         $('#LoadRecordsButton').click();
-
     });
 
     function showDetail(data) {
@@ -133,7 +135,7 @@
                 </table>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary remove" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

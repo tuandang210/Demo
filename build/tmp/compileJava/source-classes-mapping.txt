@@ -1,18 +1,18 @@
-com/model/Person.java
- com.model.Person
-com/configuration/AppInit.java
- com.configuration.AppInit
 com/service/IPersonService.java
  com.service.IPersonService
 com/configuration/AppConfiguration.java
  com.configuration.AppConfiguration
-com/model/StringDto.java
- com.model.StringDto
+com/controller/Test.java
+ com.controller.Test
 com/service/PersonService.java
  com.service.PersonService
 com/mapper/PersonMapper.java
  com.mapper.PersonMapper
 com/controller/PersonController.java
  com.controller.PersonController
-com/controller/Test.java
- com.controller.Test
+com/configuration/AppInit.java
+ com.configuration.AppInit
+com/model/StringDto.java
+ com.model.StringDto
+com/model/Person.java
+ com.model.Person
