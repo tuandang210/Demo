@@ -33,8 +33,9 @@
     $(document).ready(function () {
         $('#PersonTableContainer').jtable({
             title: 'Table of people',
-            // selected: true,
             selecting: true,
+            paging: true,
+            pageSize: 15,
             actions: {
                 listAction: '/people2',
                 createAction: '/add-person',
